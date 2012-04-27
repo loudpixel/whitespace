@@ -1,0 +1,610 @@
+/* Reset (html5doctor.com Reset Stylesheet)
+--------------------------------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display: block;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input, select {
+    vertical-align :middle;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+/* White Space Global Styles
+--------------------------------------------- */
+body {
+	background: url(../images/body.png) repeat-x;
+	border-top: 10px solid #424242;
+	color: #424242;
+	font-family: "Helvetica", sans-serif;
+	line-height: 1.4em;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 852px;
+    padding: 0 12px;
+}
+
+a:link, a:visited {
+    color: #84280F;
+    text-decoration: none;
+}
+
+h2 {
+    color: #929292;
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", "Helvetica";
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", "Helvetica";
+}
+
+
+/* Masthead
+--------------------------------------------- */
+header {
+}
+
+header h1 {
+    float: left;
+    width: 210px;
+    margin: 5px 20px 10px 0;
+}
+
+header h1 a {
+    float: left;
+    width: 210px; /* 372px / 1136px = 0.327 */
+    background-color: transparent;
+    background-image: url(../images/logo-placeholder.png);
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 0em;
+    line-height: 0em;
+    overflow: hidden;
+    text-indent: -9000px;
+    height: 100px;
+    opacity: 1;
+    -webkit-transition: opacity .2s linear;
+}
+
+header nav {
+    float: left;
+    width: 417px;
+    margin: 0 20px 0 0;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav ul.sub-menu, header nav .children {
+    display: none;
+}
+
+header nav ul li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 40px 10px 0 10px;
+    margin: 0;
+    color: #a9a9a9 !important;
+    border-top: 5px solid #e3e3e3;
+}
+
+header nav ul li a:hover, header nav ul li a.active, header nav ul li.current_page_parent a, header nav ul li.current_page_item a {
+    border-top: 5px solid #c3c3c3;
+    color: #424242 !important;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+}
+
+header nav .menu {
+    float: left;
+}
+
+header nav .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social {
+    float: right;
+    padding: 40px 0 0 0;
+    list-style-type: none;
+}
+
+.social li {
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+.social li a {
+	background-color: transparent;
+	background-image: url(../images/social.png);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 0em;
+	line-height: 0em;
+	overflow: hidden;
+	text-indent: -9000px;
+	opacity: .2;
+}
+
+.social li a.flickr { background-position: 0px 0px; height: 32px; width: 32px; }
+.social li a.flickr:hover { opacity: .7; }
+
+.social li a.twitter { background-position: -33px 0px; height: 32px; width: 32px; }
+.social li a.twitter:hover { opacity: .7; }
+
+.social li a.facebook { background-position: -66px 0px; height: 32px; width: 32px; }
+.social li a.facebook:hover { opacity: .7; }
+
+.social li a.rss { background-position: -99px 0px; height: 32px; width: 32px; }
+.social li a.rss:hover { opacity: .7; }
+
+.social li a.formspring { background-position: -132px 0px; height: 32px; width: 32px; }
+.social li a.formspring:hover { opacity: .7; }
+
+.social li a.skype { background-position: -165px 0px; height: 32px; width: 32px; }
+.social li a.skype:hover { opacity: .7; }
+
+.social li a.pin { background-position: -198px 0px; height: 32px; width: 32px; }
+.social li a.pin:hover { opacity: .7; }
+
+
+/* Homepage
+--------------------------------------------- */
+#showcase {
+    clear: both;
+}
+
+#showcase img {
+
+}
+
+#banner {
+    margin: 30px 0 0 0;
+    background: #F9FAD2 url(../images/pin.png) no-repeat center left;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #edeec6;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+#banner strong {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
+    font-weight: bold;
+}
+
+.home.page #content {
+    width: 560px;
+    margin: 30px 20px 40px 0;
+    float: left;
+}
+
+.page #content, .blog #content, .single #content, .error404 #content, .archive #content {
+    width: inherit;
+    float: none;
+    clear: both;
+    margin: 0 0 40px 0;
+}
+
+.page p, .page ul, .page ol, .blog p, .blog ul, .blog ol, .home.blog p, .home.blog ul, .home.blog ol, .single p, .single ul, .single ol, .archive p, .archive ul, .archive ol {
+    margin: 0 0 15px 0;
+}
+
+#content ul, #content ol {
+    list-style-type: circle;
+    margin: 0 0 15px 20px;
+}
+
+.blog h3, .single h3, .archive h3 {
+    margin: 0 0 20px 0;
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+.blog h2, .home.blog h2, .single h2, .page h2, .archive h2, .error404 h2 {
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 0;
+    font-size: 1.8em;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.home h2 {
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border: none;
+}
+
+.home p {
+    margin: 0;
+}
+
+.post {
+    margin: 0 0 40px 0;
+}
+
+#sidebar {
+    float: left;
+    width: 270px;
+    margin: 30px 0 40px 0;
+}
+
+footer {
+    clear: both;
+    background: #f3f3f3;
+    color: #929292;
+    border-top: 1px solid #d3d3d3;
+    padding: 20px 0 20px 0;
+}
+
+footer h3 {
+    font-size: 1em !important;
+    margin: 0 0 5px 0 !important;
+    font-weight: normal;
+    color: #626262;
+}
+
+footer p {
+    font-size: .8em;
+    line-height: 1.4em;
+}
+
+
+/* Images
+--------------------------------------------- */
+.border {
+    padding: 4px;
+    border: 1px solid #ddd;
+    background: #f3f3f3;
+}
+.alignleft {
+    float: left;
+    margin: 0 12px 0 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 0 12px;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+
+/* Typography
+--------------------------------------------- */
+#content p, #content ul, #content ol {
+    line-height: 1.5em;
+}
+
+.featured ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.featured ul li a {
+    display: block;
+    margin: 0;
+    padding: 5px 10px 5px 25px;
+    background: url(../images/star.png) no-repeat left 6px;
+    border-top: 1px dotted #ddd;
+}
+
+.post {
+    margin: 0 0 60px 0;
+}
+
+.post span.date {
+    color: #ccc;    
+} 
+
+.post p.postmeta {
+    border-top: 1px dotted #ccc;
+    font-size: .8em;
+    padding: 5px 0;
+    color: #929292;
+}
+
+.wp-caption-text, .gallery-caption {
+    color: #929292;
+    text-align: left;
+    font-style: italic;
+    font-size: .8em;
+}
+
+.nav-previous {
+    margin: 0 20px 0 0;
+}
+
+.sticky {
+    
+}
+
+
+/* Comments
+--------------------------------------------- */
+#comments {
+    margin: 40px 0 0 0;
+}
+
+#comments h3 {
+    margin: 20px 0 0 0;
+    font-size: 1em;
+}
+
+#content ol.commentlist {
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+#content ol.commentlist li {
+    margin: 0;
+    padding: 15px;
+    border-top: 1px dotted #ccc;
+}
+
+#content ol.commentlist li.even {
+    background: #f3f3f3;
+}
+
+#content ol.commentlist li.bypostauthor {
+    background: #fff9da;
+}
+
+#content ol.commentlist img {
+    float: left;
+    padding: 3px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    margin: 0 10px 10px 0;
+}
+
+#content ol.commentlist li p {
+    clear: both;
+    margin: 10px 0 0 0;
+}
+
+#content ol.commentlist li ul.children {
+    list-style-type: none;
+    margin: 0;
+}
+
+.comment-author, .comment-meta {
+    font-size: .8em;
+    line-height: 1em;
+    margin: 0 0 5px 0;
+}
+
+#respond {
+    background: #fff;
+    margin: 40px 0 0 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 5px 5px 0 #f3f3f3;
+}
+
+#respond h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+#respond h3 small {
+    font-size: .8em;
+}
+
+#respond p.comment-notes, #respond p.logged-in-as {
+    color: #929292;
+    font-size: .8em;
+    margin: 10px 0 10px 0;
+}
+
+#respond span.required {
+    color: #990000;
+}
+
+#respond label {
+    font-size: .8em;
+    color: #929292;
+    float: left;
+    width: 100px;
+}
+
+#respond form p {
+    height: 20px;
+}
+
+#respond form p.comment-form-comment, #respond form p.form-allowed-tags {
+    height: inherit;
+}
+
+#respond form p.form-allowed-tags {
+    font-size: .8em;
+    background: #f3f3f3;
+    padding: 10px;
+}
+
+#respond form p.form-submit {
+    clear: both;
+}
+
+#respond input {
+    float: left;
+}
+
+#respond .comment-form-comment {
+    clear: both;
+}
+
+.reply {
+    margin: 0 0 10px 0;
+}
+
+.reply .comment-reply-link {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+
+#showcase {
+    height: 450px;
+    background: url(../images/loader.gif) no-repeat 50% 50%; 
+}
+
+#showcase img {
+	display: none;
+}
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:30px;
+	display: block;
+	background: url(../images/galleryNav.png) 0 0;
+	width: 27px;
+	height: 27px;
+	text-indent: -9000px;
+}
+.nivo-nextNav {
+	right:30px;
+	display: block;
+	background: url(../images/galleryNav.png) 27px 0;
+	width: 27px;
+	height: 27px;
+	text-indent: -9000px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
